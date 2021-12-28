@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Shop</title>
 </head>
 
 <body>
-    <header>
-        <a href="#"><img src="img/logo.svg" alt="logo"></a>
-        <img src="img/loupe.svg" alt="loupe">
-        <button><img src="img/hamburger.svg" alt="hamburger"></button>
-        <a href="#"><img src="img/person.svg" alt="person"></a>
-        <a href="#"><img src="img/cart.svg" alt="cart"></a>
+    <header class="header">
+        <div class="header__wrp container">
+            <div class="header__wrp-logo-form">
+                <a class="header__logo" href="#"><img src="img/logo.svg" alt="logo"></a>
+                <button class="header__loupe-btn"><img src="img/loupe.svg" alt="loupe"></button>                
+            </div>
 
-        <nav>
-            <h2>menu</h2>
-            <ul>
-                <li>
-                    <a href="#">man</a>
-                    <ul>
+            <div class="header_wrp-menu-links">
+                <button class="header__menu-btn"><img src="img/hamburger.svg" alt="hamburger"></button>
+                <a href="#" class="header__link"><img src="img/person.svg" alt="person"></a>
+                <a href="#" class="header__link"><img src="img/cart.svg" alt="cart"></a>                 
+            </div>         
+        </div>
+
+
+        <nav class="header__nav nav">
+            <h2 class="header__nav-title">menu</h2>
+            <ul class="header__nav-list">
+                <li class="header__nav-item nav-sub-item">
+                    <a class="nav-sub-item__link" href="#">man</a>
+                    <ul class="nav-sub-item__list">
                         <li><a href="#">accessories</a></li>
                         <li><a href="#">bags</a></li>
                         <li><a href="#">denim</a></li>
