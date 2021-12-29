@@ -1,0 +1,299 @@
+:root {
+    --black: #222222;
+    --pink-bkg: #F1E4E6;
+    --pink-color: #F16D7F;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* HEADER */
+.header{
+    background-color: var(--black);
+}
+
+.header__wrp{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 16px 0;
+}
+
+.header__nav{
+    display: none;
+}
+
+.header__search-btn, .header__menu-btn{
+    border: 0;
+    background-color: transparent;
+}
+
+.header__search-btn{
+    margin: 0 0 0 40px;
+}
+
+.header__link{
+    margin: 0 0 0 32px;
+}
+
+.header__logo {}
+
+.header__link {}
+
+.header__nav {}
+
+.header-nav__title {}
+
+.header-nav__list {}
+
+.header-nav__item {}
+
+.nav-item {}
+
+.nav-item__title {}
+
+.nav-item__sub-list {}
+
+.nav-item__sub-link {}
+/* HEADER END */
+
+/* PREVIEW */
+.preview {
+    background-color: var(--pink-bkg);
+}
+
+.preview__wrp {
+    display: flex;
+    align-items: center;   
+}
+
+.preview__img {
+   width: 100%;
+}
+
+.preview__title-wrp {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+
+.preview__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase; 
+
+    border-left: 12px solid var(--pink-color);
+    padding-left: 16px;
+}
+
+.preview__sub-title{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: initial;
+
+    display: block;
+}
+
+.preview__sub-title-pink{
+    color: var(--pink-color);
+}
+/* PREVIEW END */
+
+/* SALES */
+.sales {
+    padding: 64px 0 96px;
+}
+
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+}
+
+.sales__item {
+    position: relative;
+    flex-grow: 1;
+    padding: 105px;
+}
+
+.sales__item:nth-child(2){
+    margin: 0 30px;
+}
+
+.sales__item:last-child{
+    margin-top: 30px;
+    padding: 64px;
+}
+
+/* .sales__item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--black);
+    opacity: 0.7;
+    z-index: 1;
+} */
+.sales-item {}
+
+.sales-item__text {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color:  var(--white);
+}
+
+.sales-item__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: var(--pink-color);
+}
+
+.sales-item--woman {
+    background-image: url(../img/women.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
+
+.sales-item--man {
+    background-image: url(../img/men.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+.sales-item--kids {
+    background-image: url(../img/kids.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+.sales-item--accessories{
+    width: 100%;
+
+    background-image: url(../img/accesories.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+/* SALES END */
+
+/* PRODUCT */
+.product {}
+
+.product__title {}
+
+.product__text {}
+
+.product__list {}
+
+.product__item {}
+
+.product-item {}
+
+.product-item__img {}
+
+.product-item__title {}
+
+.product-item__text {}
+
+.product-item__price {}
+
+.product__link {}
+/* PRODUCT END */
+
+/* BENEFITS */
+.benefits {}
+
+.benefits__list {}
+
+.benefits__item {}
+
+.benefits-item {}
+
+.benefits-item__img {}
+
+.benefits-item__title {}
+
+.benefits-item__text {}
+/* BENEFITS END */
+
+/* FOOTER */
+.footer {}
+
+.footer__content {}
+
+.footer-content {}
+
+.footer-content__wrp {}
+
+.footer-content__review {}
+
+.footer-review {}
+
+.footer-review__img {}
+
+.footer-review__quote {}
+
+.footer-content__subscribe {}
+
+.footer-subscribe {}
+
+.footer-subscribe__title {}
+
+.footer-subscribe__text {}
+
+.footer-subscribe__form {}
+
+.subscribe-form {}
+
+.subscribe-form__input {}
+
+.subscribe-form__btn {}
+
+.footer__social {}
+
+.footer-social {}
+
+.footer-social__wrp {}
+
+.footer-social__copyright {}
+
+.footer-social__list {}
+
+.footer-social__link {}
+/* FOOTER END */
