@@ -2,6 +2,7 @@
     --black: #222222;
     --pink-bkg: #F1E4E6;
     --pink: #F16D7F;
+    --dark-pink:#E05C6E;
     --white: #ffffff;
     --grey: #9F9F9F;
     --grey-input: #E1E1E1;
@@ -57,14 +58,30 @@ body {
 .header__menu-btn {
     border: 0;
     background-color: transparent;
+    fill: var(--white);
+    transition: 0.4s;
 }
 
 .header__search-btn {
     margin: 0 0 0 40px;
 }
 
+.header__search-btn:hover,
+.header__menu-btn:hover, 
+.header__link:hover{
+    fill: var(--pink);
+}
+
 .header__link {
     margin: 0 0 0 32px;
+    fill: var(--white);
+    transition: 0.4s;
+}
+
+.header__search-btn:active,
+.header__menu-btn:active, 
+.header__link:active {
+    fill: var(--dark-pink);
 }
 
 /* .header__logo {}
@@ -142,24 +159,31 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
+    
 }
 
 .sales__item {
     position: relative;
     flex-grow: 1;
     padding: 105px 0;
+    opacity: 0.93;
+    transition: 0.4s;
 }
 
-.sales__item:nth-child(2) {
-    margin: 0 30px;
+.sales__item:hover {
+    opacity: 0.95;
+}
+
+.sales__item:active {
+    opacity: 1;
 }
 
 .sales__item:last-child {
-    margin: 30px 0 0 0;
     padding: 64px 0;
 }
 
-.sales__item::before {
+/* .sales__item::before {
     content: '';
     position: absolute;
     top: 0;
@@ -169,7 +193,7 @@ body {
     background: var(--black);
     opacity: 0.7;
     z-index: 1;
-}
+} */
 
 .sales-item__text {
     font-size: 16px;
@@ -217,7 +241,6 @@ body {
     background-position: center;
     background-size: cover;
 }
-
 /* SALES END */
 
 /* PRODUCT */
@@ -245,6 +268,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
     margin: 48px 0;
 }
 
@@ -255,10 +279,6 @@ body {
 
 .product-item__wrp {
     padding: 20px 16px;
-}
-
-.product-item__img {
-    width: 100%;
 }
 
 .product-item__title {
@@ -290,8 +310,18 @@ body {
     color: var(--pink);
     padding: 16px 40px;
     border: 1px solid var(--pink);
+    transition: 0.4s;
 }
 
+.product__link:hover {
+    color: var(--white);
+    background-color: var(--pink);
+}
+
+.product__link:active {
+    color: var(--white);
+    background-color: var(--dark-pink);
+}
 /* PRODUCT END */
 
 /* BENEFITS */
@@ -405,7 +435,10 @@ body {
     background-color: var(--pink);
     text-transform: capitalize;
     color: var(--white);
+}
 
+.subscribe-form__btn:hover {
+    background-color: var(--dark-pink);
 }
 
 .footer__social {
@@ -431,6 +464,16 @@ body {
 
 .footer-social__link {
     margin: 0 8px 0 0;
+    transition: 0.4s;
+    fill: var(--white);
+}
+
+.footer-social__link:hover {
+    fill: var(--pink);
+}
+
+.footer-social__link:active {
+    fill: var(--dark-pink);
 }
 
 .footer-social__link:nth-child(4) {
