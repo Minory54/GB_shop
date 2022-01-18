@@ -1,0 +1,39 @@
+.preview {
+    background-color: var(--pink-bkg);
+
+    &__wrp {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__title-wrp {
+        width: 100%;
+        @include flex-justify(center);
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+
+        border-left: 12px solid var(--pink);
+        padding: 0 0 0 16px;
+    }
+
+    &__sub-title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+
+        display: block;
+    }
+
+    &__sub-title-pink {
+        color: var(--pink);
+    }
+}
