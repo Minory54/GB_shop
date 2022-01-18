@@ -3,7 +3,12 @@
         background-image: url(../img/footer-bg.jpg);
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: cover;
         padding: 97px;
+
+        @include tablet {
+            padding:64px 0 ;
+        }
     }
 
     &__social {
@@ -16,16 +21,27 @@
     &__wrp {
         @include flex-justify();
         align-items: center;
+
+        @include tablet {
+            @include flex-justify(center);
+            flex-wrap: wrap;
+        }
     }
 
     &__review {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 4px;
+
+        @include tablet {
+            margin: 4px 0 48px 4px;
+        }
     }
 
     &__subscribe {
         text-align: center;
+        margin: 0 4px;
     }
 }
 
@@ -36,6 +52,8 @@
         line-height: 24px;
         text-align: center;
         padding: 30px 0 0 0;
+
+
     }
 
     &__sub-quote {
@@ -91,6 +109,8 @@
     &__wrp {
         @include flex-justify();
         align-items: center;
+
+
     }
 
     &__copyright {

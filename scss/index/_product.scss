@@ -18,10 +18,14 @@
     }
 
     &__list {
-        @include flex-justify();
+        @include flex-justify(center);
         flex-wrap: wrap;
         gap: 30px;
         margin: 48px 0;
+
+        @include tablet {
+            gap: 8px
+        }
     }
 
     &__item {

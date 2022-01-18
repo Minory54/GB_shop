@@ -19,11 +19,24 @@
         transition: 0.4s;
     }
 
+    &_links-alignment{
+        display: flex;
+        align-items: flex-end;
+
+        @include mobile {
+            align-items: center;
+        }
+    }
+
     &__link {
         margin: 0 0 0 32px;
         fill: var(--white);
         transition: 0.4s;
         text-decoration: none;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__search-btn,

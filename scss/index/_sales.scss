@@ -1,5 +1,10 @@
 .sales {
+
     padding: 64px 0 96px;
+
+    @include tablet{
+        padding: 64px 0;
+    }
 
     &__list {
         @include flex-justify();
@@ -13,6 +18,7 @@
         padding: 105px 0;
         opacity: 0.93;
         transition: 0.4s;
+        width: 25%;
 
         &:hover {
             opacity: 0.95;
@@ -24,7 +30,20 @@
 
         &:last-child {
             padding: 64px 0;
+
+            @include tablet{
+                padding: 32px 0;
+            }
         }
+
+        @include tablet{
+            padding: 58px 0;
+        }
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+
     }
 }
 
