@@ -109,6 +109,7 @@ body {
   display: none;
   position: absolute;
   right: 0;
+  z-index: 1;
   padding: 37px 34px;
   min-width: 232px;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
