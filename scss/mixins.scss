@@ -1,0 +1,23 @@
+@mixin flex-justify ($justifyContent: space-between) {
+    display: flex;
+    justify-content: $justifyContent;
+}
+
+@mixin sales-bg ($url) {
+    background-image: $url;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+
+@mixin tablet {
+    @media (max-width: $tablet-size) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile-size) {
+        @content;
+    }
+}

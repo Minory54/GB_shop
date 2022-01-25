@@ -1,0 +1,86 @@
+.sales {
+
+    padding: 64px 0 96px;
+
+    @include tablet{
+        padding: 64px 0;
+    }
+
+    &__list {
+        @include flex-justify();
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        position: relative;
+        flex-grow: 1;
+        padding: 105px 0;
+        opacity: 0.93;
+        transition: 0.4s;
+        width: 25%;
+
+        &:hover {
+            opacity: 0.95;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+
+        &:last-child {
+            padding: 64px 0;
+
+            @include tablet{
+                padding: 32px 0;
+            }
+        }
+
+        @include tablet{
+            padding: 58px 0;
+        }
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+
+    }
+}
+
+
+.sales-item {
+    &__text {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: var(--white);
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--pink);
+    }
+
+    &--woman {
+        @include sales-bg(url(../img/women.jpg));
+    }
+
+    &--man {
+        @include sales-bg(url(../img/men.jpg));
+    }
+
+    &--kids {
+        @include sales-bg(url(../img/kids.jpg));
+    }
+
+    &--accessories {
+        width: 100%;
+
+        @include sales-bg(url(../img/accesories.jpg));
+    }
+}

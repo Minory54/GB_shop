@@ -1,0 +1,37 @@
+.benefits {
+    background-color: var(--black);
+    padding: 104px 0;
+
+    &__list {
+        @include flex-justify();
+        align-items: center;
+        gap: 32px;
+
+        @include tablet{
+            @include flex-justify(center);
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        text-align: center;
+    }
+}
+
+.benefits-item {
+
+    &__title {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--light-grey);
+        padding: 19px 0 16px 0;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--light-grey);
+    }
+}

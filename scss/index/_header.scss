@@ -1,0 +1,126 @@
+.header {
+    background-color: var(--black);
+
+    &__wrp {
+        @include flex-justify();
+
+        padding: 16px 0;
+    }
+
+    &__search-btn {
+        margin: 0 0 0 40px;
+    }
+
+    &__search-btn,
+    &__menu-btn {
+        border: 0;
+        background-color: transparent;
+        fill: var(--white);
+        transition: 0.4s;
+    }
+
+    &_links-alignment{
+        display: flex;
+        align-items: flex-end;
+
+        @include mobile {
+            align-items: center;
+        }
+    }
+
+    &__link {
+        margin: 0 0 0 32px;
+        fill: var(--white);
+        transition: 0.4s;
+        text-decoration: none;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__search-btn,
+    &__menu-btn,
+    &__link {
+        &:hover {
+            fill: var(--pink);
+        }
+
+        &:active {
+            fill: var(--dark-pink);
+        }
+    }
+
+    &__menu-btn_click {
+        fill: var(--pink);
+    }
+
+    &__nav {
+        background: var(--white);
+        display: none;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+
+        padding: 37px 34px;
+        min-width: 232px;
+
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+}
+
+.display-block {
+    display: block;
+}
+
+.header-nav {
+    &__title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        margin: 0 0 24px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.nav-item {
+    &__title {
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--pink);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.4s;
+
+        &:hover {
+            color: var(--dark-pink);
+        }
+    }
+
+    &__sub-list {
+        margin: 12px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__sub-link {
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: var(--grey);
+        padding: 0 20px 0;
+        transition: 0.4s;
+
+        &:hover {
+            color: var(--dark-grey);
+        }
+    }
+}
